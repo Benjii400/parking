@@ -1,0 +1,23 @@
+
+#plate , #model ,#owner,#color{
+    padding: 10px;
+    margin: 20px;
+}
+.btn{
+    max-width: 80%;
+}
+nav{
+    background-color: blue;
+}
+nav img{
+    border-radius: 50%;
+    width: 70px;
+    margin-left: 20px;
+    padding: 20px;
+    padding-right: 0px;
+}
+.container .row #card{
+    border-radius: 7px 7px 7px 7px;
+}
+
+
