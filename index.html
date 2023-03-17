@@ -74,7 +74,9 @@
         var day = new Date();
 
         var entrance = day.getHours() + " AM:" + day.getMinutes() + ":" + day.getSeconds();
-        var entranceSec = day.getSeconds();
+        var entranceT  =  day.getHours()  + day.getMinutes() + day.getSeconds();
+
+        
 
         if (owner.value == "") {
             owner.style = "max-width: 90%;border: 1px solid red;";
@@ -97,6 +99,7 @@
         else {
 
 
+            color.style = "border:none;max-width: 90%";
             var table = document.getElementById("myTable");
             var numRow = document.getElementById('myTable').rows.length;
 
@@ -119,10 +122,16 @@
 
             var x = document.createElement('input');
             x.type = "button";
+            x.classList.add('btn','btn-warning');
             x.value = "remove";
             x.style = "background-color:tomato;color:black;border-radius:7px;width:80px;height:40px"
             cell6.appendChild(x);
 
+
+            plate.value="";
+            owner.value="";
+            color.value="";
+            model.value="";
             x.onclick = function del() {
                 const element = document.getElementById(numRow);
                 element.remove(numRow);
